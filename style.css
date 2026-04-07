@@ -23,6 +23,55 @@ a:hover {
     text-decoration: underline;
 }
 
+li {
+    list-style-type: none;
+}
+
 .purple {
     color: #7342d6;
+}
+
+.logo {
+    width: 160px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+
+/* NAV */
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.nav__logo--img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+}
+
+.nav__links {
+    display: flex;
+}
+
+.nav__link {
+    padding: 8px;
 }
