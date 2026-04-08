@@ -20,7 +20,7 @@
                 <ul class="nav__links">
                     <li><a class="nav__link" href="#">About</a></li>
                     <li><a class="nav__link" href="#">Blog</a></li>
-                    <li><a class="nav__link" href="#">Pricing</a></li>
+                    <li><a class="nav__link" href="#pricing">Pricing</a></li>
                     <li><a class="nav__link" href="#">Contact Us</a></li>
                     <li><a class="nav__link login__link" href="#">Login</a></li>
                     <li><a class="nav__link nav__link--primary" href="#">Sign Up</a></li>
@@ -211,67 +211,70 @@
 
     <section id="pricing">
         <div class="container">
-            <div class="row row--narrow">
+            <div class="row">
                 <div class="section__description-box">
                     <h2 class="section__title1 purple">PRICING</h2>
                     <h1 class="section__title2">Reasonable & Flexible <span class="purple">Plans.</span></h1>
                     <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="plans__list">
-                    <div class="plan plan--cheap">
-                        <div class="plan__top">
-                            <div class="plan__title1">PERSONAL</div>
-                            <div class="plan__price">$17.99</div>
-                            <div class="plan__period">MONTHLY</div>
+                    <div id="min-plan" class="plan">
+                        <div class="plan__stripe"></div>
+                        <div class="plan__box plan__box--top">
+                            <div class="text plan__title1">PERSONAL</div>
+                            <div class="text plan__price">$17.99</div>
+                            <div class="text plan__period">MONTHLY</div>
                         </div>
-                        <div class="plan__middle">
-                            <div class="plan__title2">For Individuals</div>
+                        <div class="plan__box plan__box--middle">
+                            <div class="text plan__title2">For Individuals</div>
                             <ul class="plan__features">
-                                <li class="plan__feature">30 Templates</li>
-                                <li class="plan__feature">7 Landing Pages</li>
-                                <li class="plan__feature">12 Internal Pages</li>
-                                <li class="plan__feature">Basic Assistance</li>
+                                <li class="text plan__feature">30 Templates</li>
+                                <li class="text plan__feature">7 Landing Pages</li>
+                                <li class="text plan__feature">12 Internal Pages</li>
+                                <li class="text plan__feature">Basic Assistance</li>
                             </ul>
                         </div>
-                        <div class="plan__bottom">
+                        <div class="plan__box plan__box--bottom">
                             <button class="plan__button">Buy Now</button>
                         </div>
                     </div>
-                    <div class="plan plan--best-value">
-                        <div class="plan__top">
-                            <div class="plan__title1">BUSINESS</div>
-                            <div class="plan__price">$37.99</div>
-                            <div class="plan__period">MONTHLY</div>
+                    <div id="best-value" class="plan">
+                        <div class="plan__stripe"></div>
+                        <div class="plan__box plan__box--top">
+                            <div class="text plan__title1">BUSINESS</div>
+                            <div class="text plan__price">$37.99</div>
+                            <div class="text plan__period">MONTHLY</div>
                         </div>
-                        <div class="plan__middle">
-                            <div class="plan__title2">For Small Businesses</div>
+                        <div class="plan__box plan__box--middle">
+                            <div class="text plan__title2">For Small Businesses</div>
                             <ul class="plan__features">
-                                <li class="plan__feature">60 Templates</li>
-                                <li class="plan__feature">15 Landing Pages</li>
-                                <li class="plan__feature">22 Internal Pages</li>
-                                <li class="plan__feature">Priority Assistance</li>
+                                <li class="text plan__feature">60 Templates</li>
+                                <li class="text plan__feature">15 Landing Pages</li>
+                                <li class="text plan__feature">22 Internal Pages</li>
+                                <li class="text plan__feature">Priority Assistance</li>
                             </ul>
                         </div>
-                        <div class="plan__bottom">
+                        <div class="plan__box plan__box--bottom">
                             <button class="plan__button purple">Buy Now</button>
                         </div>
                     </div>
-                    <div class="plan plan--pricey">
-                        <div class="plan__top">
-                            <div class="plan__title1">ENTERPRISE</div>
-                            <div class="plan__price">$57.99</div>
-                            <div class="plan__period">MONTHLY</div>
+                    <div id="max-plan" class="plan">
+                        <div class="plan__stripe"></div>
+                        <div class="plan__box plan__box--top">
+                            <div class="text plan__title1">ENTERPRISE</div>
+                            <div class="text plan__price">$57.99</div>
+                            <div class="text plan__period">MONTHLY</div>
                         </div>
-                        <div class="plan__middle">
-                            <div class="plan__title2">For Large Companies</div>
+                        <div class="plan__box plan__box--middle">
+                            <div class="text plan__title2">For Large Companies</div>
                             <ul class="plan__features">
-                                <li class="plan__feature">90 Templates</li>
-                                <li class="plan__feature">27 Landing Pages</li>
-                                <li class="plan__feature">37 Internal Pages</li>
-                                <li class="plan__feature">Personal Assistance</li>
+                                <li class="text plan__feature">90 Templates</li>
+                                <li class="text plan__feature">27 Landing Pages</li>
+                                <li class="text plan__feature">37 Internal Pages</li>
+                                <li class="text plan__feature">Personal Assistance</li>
                             </ul>
                         </div>
-                        <div class="plan__bottom">
+                        <div class="plan__box plan__box--bottom">
                             <button class="plan__button">Buy Now</button>
                         </div>
                     </div>
@@ -325,7 +328,7 @@
                 <div class="last_row">
                     <div class="last__para">Developers all over the world are happily using Treact.</div>
                     <div class="last__btns">
-                        <button class="last__btn last__btn--primary">Get Started</button>
+                        <button class="last__btn">Get Started</button>
                         <button class="last__btn">Contact Us</button>
                     </div>
                 </div>
