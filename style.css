@@ -128,6 +128,7 @@ main {
 /* NAV */
 
 .nav__container {
+   /* position: relative; */
     padding-top: 32px;
     padding-bottom: 0px;
 }
@@ -214,6 +215,105 @@ main {
     content: "";
     width: 0;
     height: 0;
+}
+
+
+
+
+/* MENU */
+
+.menu__btn {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+}
+
+.menu__btn--open {
+   display: none;
+}
+
+.menu__icon {
+    width: 24px;
+    height: 24px;
+    color: #243e63;
+    transition: all 300ms ease;
+}
+
+.open__icon:hover {
+    color: #6415ff;
+}
+
+.menu__btn--close {
+    position: absolute;
+    top: 24px;
+    right: 18px;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    margin: 24px 16px;
+    padding: 32px;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(300%);
+    transition: all 300ms ease;
+}
+
+.open--menu .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  /*  animation: slide-menu 1000ms 0 ease-in; */
+}
+
+/* ALTERNATIVE*/
+/*@keyframes slide-menu {
+    0% {
+        transform: translateX(800px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} */
+
+.menu__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__link {
+    color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    border: 2px solid transparent;
+}
+
+.menu__link--primary {
+    padding: 12px 32px;
+    color: #f7fafc;
+    background-color: #6415ff;
+    border: none;
+    border-radius: 500px;
+}
+
+.menu__link:hover {
+    text-decoration: none;
 }
 
 
@@ -578,6 +678,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 4rem;
 }
@@ -997,3 +1099,37 @@ footer .container{
     background-color: rgb(203, 213, 224);
 }
 
+
+
+
+/* R E S P O N S I V E  */
+
+/* small phones, tablets, large smartphones */
+@media(max-width: 768px) {
+    .feature {
+        width: calc(100% / 2);
+    }
+
+    .plans_list {
+        justify-content: center;
+    }
+
+    .plan {
+        width: calc(100% / 2);
+    }
+
+    .footer__category {
+        width: calc(100% / 4);
+    }
+}
+
+
+
+
+/* small phones, large phones */
+
+@media(max-width: 550px) {
+    .feature {
+        width: 100%;
+    }
+}
